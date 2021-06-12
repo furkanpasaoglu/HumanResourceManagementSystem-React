@@ -2,7 +2,7 @@ import App from "../App";
 import axios from "axios";
 
 export default class ResumeService {
-    apiUrl=App().apiUrl + "resumes";
+    apiUrl = process.env.REACT_APP_API_URL + "resumes";
 
     getResumes(){
         return axios.get(this.apiUrl+"/getAll")

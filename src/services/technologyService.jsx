@@ -2,7 +2,7 @@ import App from "../App";
 import axios from "axios";
 
 export default class TechnologyService {
-    apiUrl=App().apiUrl + "technologies";
+    apiUrl = process.env.REACT_APP_API_URL + "technologies";
 
     getTechnologies(){
         return axios.get(this.apiUrl+"/getAll")

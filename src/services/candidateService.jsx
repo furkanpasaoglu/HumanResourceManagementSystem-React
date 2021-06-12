@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default class CandidateService {
-    apiUrl=process.env.HRMS_APP_API_URL + "candidates";
+    apiUrl = process.env.REACT_APP_API_URL + "candidates";
 
     getCandidates(){
         return axios.get(this.apiUrl+"/getAll")

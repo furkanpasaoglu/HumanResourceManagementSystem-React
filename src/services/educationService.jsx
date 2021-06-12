@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default class EducationService {
-    apiUrl=process.env.HRMS_APP_API_URL + "educations";
+    apiUrl = process.env.REACT_APP_API_URL + "educations";
 
     getEducations(){
         return axios.get(this.apiUrl+"/getAll")

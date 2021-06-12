@@ -2,7 +2,7 @@ import App from "../App";
 import axios from "axios";
 
 export default class JobPositionService {
-    apiUrl=App().apiUrl + "jobpositions";
+    apiUrl = process.env.REACT_APP_API_URL + "jobpositions";
 
     getJobPositions(){
         return axios.get(this.apiUrl+"/getAll")

@@ -2,7 +2,7 @@ import App from "../App";
 import axios from "axios";
 
 export default class WorkExperienceService {
-    apiUrl=App().apiUrl + "workexperiences";
+    apiUrl = process.env.REACT_APP_API_URL + "workexperiences";
 
     getWorkExperiences(){
         return axios.get(this.apiUrl+"/getAll")
