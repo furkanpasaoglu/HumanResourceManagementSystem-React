@@ -47,7 +47,6 @@ export default function AddJobAdvertisement() {
                 onSubmit={async values => {
                     await new Promise(resolve => setTimeout(resolve, 500));
                     alert(JSON.stringify(values, null, 2));
-                    //TODO: https://github.com/haticekiziltas/HRMS-Frontend/blob/master/src/pages/JobAdvertisementAdd.jsx
                 }}>
                 {({ handleSubmit, handleChange, values, errors, handleBlur }) =>(
                     <Form className='attached fluid segment' style={{ background: "#f1f5f8", borderRadius: 20,position:"relative",margin:"25px",padding:"30px",paddingBottom:"50px",flexDirection:"column"}} onSubmit={handleSubmit}>
