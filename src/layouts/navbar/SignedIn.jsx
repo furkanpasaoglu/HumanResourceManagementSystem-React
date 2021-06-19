@@ -1,11 +1,13 @@
 import React from 'react';
-import {Button, Dropdown, Image, Menu} from "semantic-ui-react";
-import {NavLink} from "react-router-dom";
+import {Dropdown, Image} from "semantic-ui-react";
+import JobPosting from "./JobPosting";
+import AdminButton from "./AdminButton";
 
 export default function SignedIn({signOut}) {
     return (
         <div>
-            <Button color='green' as={NavLink} to="/is-ilani-ekle">İş İlanı Ekle</Button>
+             <JobPosting/>
+            <AdminButton/>
             <Image avatar spaced="right" src="https://envri.eu/wp-content/uploads/2016/08/software-developer-copy.jpg"/>
                 <Dropdown pointing="top left" text="Furkan">
                     <Dropdown.Menu>

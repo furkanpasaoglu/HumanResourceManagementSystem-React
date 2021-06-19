@@ -1,4 +1,3 @@
-import App from "../App";
 import axios from "axios";
 
 export default class JobPositionService {

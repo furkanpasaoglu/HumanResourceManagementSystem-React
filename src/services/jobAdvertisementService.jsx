@@ -7,6 +7,10 @@ export default class JobAdvertisementService {
         return axios.get(this.apiUrl+"/getAll")
     }
 
+    getById(id){
+        return axios.get(this.apiUrl+"/getById?id="+id);
+    }
+
     findByActiveTrue(){
         return axios.get(this.apiUrl+"/findByActiveTrue")
     }
@@ -24,7 +28,7 @@ export default class JobAdvertisementService {
     }
 
     update(jobAdvertisement){
-        return axios.put(this.apiUrl+"/update",jobAdvertisement)
+        return axios.post(this.apiUrl+"/update",jobAdvertisement)
     }
 
     add(jobAdvertisement){
